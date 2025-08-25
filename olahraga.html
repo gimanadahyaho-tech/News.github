@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berita Olahraga Terbaru</title>
+<style>
+  /* Box-sizing global */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto; /* scroll horizontal di HP */
+    padding: 12px 10px;
+    z-index: 100;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 4px;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .article-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(230, 126, 34, 0.9), transparent);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em; /* lebih kecil supaya muat layar HP */
+    font-weight: 600;
+  }
+
+  .article-content {
+    padding: 20px;
+    line-height: 1.6em;
+  }
+
+  .date {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #2c3e50;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+  }
+
+  .btn-wa, .btn-utama {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .btn-wa {
+    background-color: #25D366;
+  }
+
+  .btn-wa:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+  }
+
+  .btn-utama {
+    background-color: #e67e22;
+  }
+
+  .btn-utama:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+  }
+
+  /* Hilangkan scroll bar di browser tertentu */
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Berita Olahraga Terbaru</h1>
+</header>
+
+<nav>
+  <a href="index.html">Berita Utama</a>
+  <a href="politik.html">Politik</a>
+  <a href="hiburan.html">Hiburan</a>
+  <a href="olahraga.html" class="active">Olahraga</a>
+  <a href="teknologi.html">Teknologi</a>
+</nav>
+
+<div class="container">
+
+  <div class="image-wrapper">
+    <img src="sepak.jpg" alt="Pertandingan Sepak Bola" class="article-image">
+    <div class="overlay-text">
+      Liga Nasional Memanas: Derby Kota Besar Memikat Ribuan Penonton
+    </div>
+  </div>
+
+  <div class="article-content">
+    <span class="date">25 Agustus 2025 | Reporter: Sports Today</span>
+
+    <p>Jakarta – Laga derby antar tim kota besar di Liga Nasional berhasil menarik perhatian ribuan penggemar sepak bola. Stadion dipenuhi oleh suporter dari kedua tim, dengan sorak-sorai yang menggema sepanjang pertandingan. Laga ini dinilai menjadi salah satu pertandingan paling sengit musim ini, karena kedua tim sedang bersaing ketat di papan klasemen.</p>
+
+    <p>Babak pertama berjalan dengan tempo cepat, kedua tim saling menyerang dan memperlihatkan strategi permainan yang matang. Gol pembuka tercipta melalui serangan balik cepat, yang membuat suporter tim lawan berteriak histeris. Pelatih kedua tim menekankan pentingnya disiplin taktik dan koordinasi antar pemain untuk menjaga keunggulan maupun mengejar ketertinggalan.</p>
+
+    <p>Selain aksi di lapangan, atmosfer stadion juga diramaikan oleh parade bendera, yel-yel, dan koreografi suporter yang kreatif. Media sosial langsung ramai dengan tagar resmi pertandingan, memperlihatkan momen-momen penting serta komentar penggemar. Beberapa influencer olahraga ikut membagikan highlights, menambah viralnya pertandingan di kalangan netizen.</p>
+
+    <div class="divider"></div>
+
+    <p>Di luar pertandingan, panitia menekankan protokol keamanan dan kenyamanan penonton, termasuk pemeriksaan ketat dan pengaturan tempat duduk. Polisi dan petugas keamanan berkoordinasi untuk memastikan seluruh pengunjung dapat menikmati pertandingan tanpa insiden. Penyelenggara juga memberikan sesi interaktif untuk anak-anak dan pengunjung muda, seperti mini games dan kuis seputar sepak bola.</p>
+
+    <p>Hasil akhir pertandingan memperlihatkan skor yang ketat, meninggalkan kesan mendalam bagi penonton. Laga ini tidak hanya menjadi tontonan olahraga, tetapi juga ajang sosial yang mempererat hubungan antar komunitas suporter. Analisis pakar menyoroti kualitas permainan, keputusan wasit, dan peluang kedua tim di sisa musim.</p>
+
+    <a href="https://wa.me/6281215870739?text=Cek%20berita%20olahraga%20terbaru%20nih" class="btn-wa" target="_blank">
+      Bagikan ke Teman via WhatsApp
+    </a>
+
+    <br>
+    <a href="index.html" class="btn-utama">Kembali ke Berita Utama</a>
+  </div>
+
+</div>
+
+</body>
+</html>

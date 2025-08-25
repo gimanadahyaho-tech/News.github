@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berita Hiburan Anime</title>
+<style>
+  /* Box-sizing global */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+    display: flex;
+    justify-content: flex-start; /* fleksibel untuk scroll */
+    overflow-x: auto; /* scroll jika terlalu panjang */
+    padding: 12px 10px;
+    z-index: 100;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap; /* agar tidak wrap */
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: #9b59b6;
+    border-bottom: 2px solid #9b59b6;
+    padding-bottom: 4px;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .article-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(155, 89, 182, 0.9), transparent);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em; /* lebih kecil supaya muat layar kecil */
+    font-weight: 600;
+  }
+
+  .article-content {
+    padding: 20px;
+    line-height: 1.6em;
+  }
+
+  .date {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #2c3e50;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+  }
+
+  .btn-wa, .btn-utama {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .btn-wa {
+    background-color: #25D366;
+  }
+
+  .btn-wa:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+  }
+
+  .btn-utama {
+    background-color: #9b59b6;
+  }
+
+  .btn-utama:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+  }
+
+  /* Hilangkan scroll bar di beberapa browser */
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Berita Hiburan Anime</h1>
+</header>
+
+<nav>
+  <a href="index.html">Berita Utama</a>
+  <a href="politik.html">Politik</a>
+  <a href="hiburan.html" class="active">Hiburan</a>
+  <a href="olahraga.html">Olahraga</a>
+  <a href="teknologi.html">Teknologi</a>
+</nav>
+
+<div class="container">
+
+  <div class="image-wrapper">
+    <img src="cosplay.jpg" alt="Anime Convention" class="article-image">
+    <div class="overlay-text">
+      Konvensi Anime Terbesar 2025, Cosplayer Penuh Warna dan Kreativitas
+    </div>
+  </div>
+
+  <div class="article-content">
+    <span class="date">25 Agustus 2025 | Reporter: Anime Today</span>
+
+    <p>Jakarta – Ribuan penggemar anime memadati gedung konvensi untuk menghadiri Anime Festival 2025, event tahunan yang paling dinanti oleh komunitas penggemar budaya Jepang. Konvensi ini menampilkan berbagai aktivitas, mulai dari cosplay, lomba menggambar manga, penampilan musik J-Pop, hingga talkshow eksklusif dengan mangaka terkenal yang karyanya mendunia.</p>
+
+    <p>Para cosplayer terlihat memadati lantai utama dengan kostum yang sangat detail dan kreatif, menampilkan karakter dari anime populer seperti “Demon Slayer”, “One Piece”, dan “My Hero Academia”. Penonton pun dibuat kagum dengan gerakan dan akting para cosplayer yang mendekati aslinya. Setiap sudut venue dipenuhi stan merchandise resmi, mulai dari action figure, poster langka, hingga aksesoris cosplay.</p>
+
+    <p>Acara ini juga menyediakan sesi workshop bagi para penggemar yang ingin belajar menggambar manga, membuat kostum cosplay, dan teknik fotografi khusus event anime. Para peserta muda antusias mengikuti setiap sesi, sementara penggemar lama memanfaatkan kesempatan untuk bertemu langsung dengan idol atau kreator favorit mereka. Bahkan beberapa influencer anime mencatat momen-momen terbaik yang langsung viral di media sosial.</p>
+
+    <div class="divider"></div>
+
+    <p>Selain hiburan, festival ini menjadi wadah komunitas untuk membangun persahabatan antarpenggemar, berbagi tips cosplay, dan berdiskusi seputar tren anime terkini. Penyelenggara menekankan bahwa tujuan utama adalah menciptakan lingkungan yang aman, menyenangkan, dan edukatif bagi semua pengunjung. Pihak sponsor pun mendukung dengan menyediakan hadiah, lomba berhadiah, dan hadiah eksklusif bagi cosplayer terbaik.</p>
+
+    <p>Event ini tidak hanya menghibur, tetapi juga memperkuat komunitas penggemar anime di Indonesia. Media sosial ramai dengan tagar resmi #AnimeFestival2025, di mana ribuan foto, video, dan komentar membagikan pengalaman unik dari festival ini, membuatnya trending di kalangan penggemar.</p>
+
+    <a href="https://wa.me/6281215870739?text=Cek%20berita%20hiburan%20yang%20baru%20nih%20😀" class="btn-wa" target="_blank">
+      Bagikan ke Teman via WhatsApp
+    </a>
+
+    <br>
+    <a href="index.html" class="btn-utama">Kembali ke Berita Utama</a>
+  </div>
+
+</div>
+
+</body>
+</html>

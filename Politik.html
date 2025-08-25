@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berita Politik Terbaru</title>
+<style>
+  /* Box-sizing global */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+    display: flex;
+    justify-content: flex-start; /* fleksibel untuk scroll */
+    overflow-x: auto; /* scroll jika terlalu panjang */
+    padding: 12px 10px;
+    z-index: 100;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap; /* agar tidak wrap */
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 4px;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .article-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(231, 76, 60, 0.9), transparent);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em; /* lebih kecil supaya muat layar kecil */
+    font-weight: 600;
+  }
+
+  .article-content {
+    padding: 20px;
+    line-height: 1.6em;
+  }
+
+  .date {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #2c3e50;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+  }
+
+  .btn-wa, .btn-back {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .btn-wa {
+    background-color: #25D366;
+  }
+
+  .btn-wa:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+  }
+
+  .btn-back {
+    background-color: #3498db;
+  }
+
+  .btn-back:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+
+  /* Hilangkan scroll bar di beberapa browser */
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Berita Politik Terbaru</h1>
+</header>
+
+<nav>
+  <a href="index.html">Berita Utama</a>
+  <a href="politik.html" class="active">Politik</a>
+  <a href="hiburan.html">Hiburan</a>
+  <a href="olahraga.html">Olahraga</a>
+  <a href="teknologi.html">Teknologi</a>
+</nav>
+
+<div class="container">
+
+  <div class="image-wrapper">
+    <img src="rapat.jpg" alt="Foto Parlemen" class="article-image">
+    <div class="overlay-text">
+      DPR Sepakati RUU Baru, Apa Dampaknya bagi Masyarakat?
+    </div>
+  </div>
+
+  <div class="article-content">
+    <span class="date">25 Agustus 2025 | Reporter: Politik Hari Ini</span>
+
+    <p>Jakarta – Dewan Perwakilan Rakyat (DPR) secara resmi menyetujui Rancangan Undang-Undang (RUU) yang tengah menjadi perhatian publik. RUU ini dianggap akan memberikan pengaruh signifikan terhadap tata kelola ekonomi, politik, dan regulasi nasional. Beberapa fraksi menyatakan dukungan penuh terhadap RUU tersebut, sementara fraksi lainnya mengajukan catatan terkait beberapa pasal yang dianggap kontroversial dan membutuhkan evaluasi lebih lanjut.</p>
+
+    <p>Para analis politik menilai bahwa persetujuan RUU ini dapat memperkuat stabilitas pemerintahan, tetapi berpotensi menimbulkan pro dan kontra di kalangan masyarakat. Demonstrasi damai telah dilaporkan di sejumlah kota besar, dengan warga menuntut keterbukaan informasi dan sosialisasi yang jelas terkait implementasi regulasi baru tersebut.</p>
+
+    <p>Dalam pernyataan resmi, pihak eksekutif menegaskan bahwa sosialisasi ke publik akan segera dilakukan, termasuk penyusunan regulasi pelaksanaan yang rinci. DPR juga menjanjikan evaluasi berkala agar penerapan RUU tetap sesuai tujuan awal, serta mengantisipasi kemungkinan revisi di masa depan jika ditemukan kekurangan dalam implementasi.</p>
+
+    <div class="divider"></div>
+
+    <p>Pakar hukum menyatakan bahwa RUU ini memiliki implikasi luas, termasuk terhadap sektor usaha kecil dan menengah, investasi asing, serta hak-hak masyarakat dalam beberapa aspek hukum. Selain itu, keberadaan beberapa pasal kontroversial memicu perdebatan di media sosial dan forum publik, dengan berbagai opini yang muncul dari akademisi, pengamat politik, dan masyarakat umum.</p>
+
+    <p>Partai politik juga menyampaikan strategi komunikasi kepada konstituen masing-masing untuk menjelaskan dampak positif dari RUU ini, sambil menjawab kekhawatiran masyarakat terkait pasal-pasal yang diperdebatkan. Pemerintah daerah diminta untuk ikut aktif melakukan sosialisasi, agar informasi tersampaikan hingga level masyarakat akar rumput.</p>
+
+    <p>Seiring berjalannya berita ini, perkembangan mengenai implementasi RUU menjadi topik trending di media sosial. Banyak warga menggunakan platform digital untuk berdiskusi dan menyampaikan opini, menandakan tingginya perhatian publik terhadap langkah-langkah legislatif yang sedang berlangsung.</p>
+
+    <a href="https://wa.me/6281215870739?text=Bro,%20ada%20berita%20politik%20baru%20nih" class="btn-wa" target="_blank">
+      Bagikan ke Teman via WhatsApp
+    </a>
+
+    <br>
+    <a href="index.html" class="btn-back">Kembali ke Berita Utama</a>
+  </div>
+
+</div>
+
+</body>
+</html>
